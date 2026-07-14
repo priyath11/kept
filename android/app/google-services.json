@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "160642501661",
+    "project_id": "riverpod-learn-auth",
+    "storage_bucket": "riverpod-learn-auth.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160642501661:android:ef0fd440d6480e38058af4",
+        "android_client_info": {
+          "package_name": "com.example.kept"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEJkJV2jYinHqNNDURyL_NTR9Vs5gZqNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160642501661:android:fe11a4a3ae285421058af4",
+        "android_client_info": {
+          "package_name": "com.example.riverpod_learn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEJkJV2jYinHqNNDURyL_NTR9Vs5gZqNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
