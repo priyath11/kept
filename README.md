@@ -8,7 +8,13 @@ The idea is simple — whatever you plan to do today, you either did it or you d
 
 ## Screenshots
 
-*Coming soon*
+| Sign Up | Home | Home with Progress |
+|---|---|---|
+| <img src="assets/images/screenshots/signup_screen.jpeg" width="200"/> | <img src="assets/images/screenshots/home_empty.jpeg" width="200"/> | <img src="assets/images/screenshots/home_progress.jpeg" width="200"/> |
+
+| Home with Tasks | Tasks | Tasks Empty |
+|---|---|---|
+| <img src="assets/images/screenshots/home_tasks.jpeg" width="200"/> | <img src="assets/images/screenshots/tasks_list.jpeg" width="200"/> | <img src="assets/images/screenshots/tasks_empty.jpeg" width="200"/> |
 
 ---
 
@@ -63,15 +69,3 @@ flutter run
 ---
 
 ## Project Structure
-lib/
-models/        — data classes
-services/      — Firebase and API logic
-viewmodels/    — state management
-views/         — screens and widgets
-main.dart
-
----
-
-Built by **Priyath Prasad** — Flutter Developer, Vancouver BC
-
-[GitHub](https://github.com/priyath11) · [LinkedIn](https://linkedin.com/in/priyathprasad11)
