@@ -25,9 +25,9 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
 
   void _signUp() async {
     final success = await ref.read(authViewModelProvider.notifier).signUp(
-      emailController.text.trim(),
-      passwordController.text.trim(),
-    );
+          emailController.text.trim(),
+          passwordController.text.trim(),
+        );
     if (success && mounted) {
       Navigator.pushReplacement(
         context,
@@ -93,13 +93,13 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                   onPressed: authState.isLoading ? null : _signUp,
                   child: authState.isLoading
                       ? const SizedBox(
-                    height: 18,
-                    width: 18,
-                    child: CircularProgressIndicator(
-                      color: AppTheme.white,
-                      strokeWidth: 2,
-                    ),
-                  )
+                          height: 18,
+                          width: 18,
+                          child: CircularProgressIndicator(
+                            color: AppTheme.white,
+                            strokeWidth: 2,
+                          ),
+                        )
                       : const Text('Create account'),
                 ),
               ),

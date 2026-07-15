@@ -39,8 +39,7 @@ class TaskService {
         .snapshots()
         .map((snapshot) {
       return snapshot.docs.map((doc) {
-        return TaskModel.fromMap(
-            doc.id, doc.data() as Map<String, dynamic>);
+        return TaskModel.fromMap(doc.id, doc.data() as Map<String, dynamic>);
       }).toList();
     });
   }

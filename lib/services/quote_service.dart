@@ -20,7 +20,8 @@ class QuoteService {
             {
               'parts': [
                 {
-                  'text': 'Give me one short powerful quote about discipline, consistency, or follow-through. Draw inspiration from books like Atomic Habits, Think and Grow Rich, The 5 AM Club, Deep Work, Can\'t Hurt Me, or Extreme Ownership. Maximum 15 words. Return ONLY in this exact format with no extra text:\nQUOTE: [the quote here]\nSOURCE: [book name or author name only]',
+                  'text':
+                      'Give me one short powerful quote about discipline, consistency, or follow-through. Draw inspiration from books like Atomic Habits, Think and Grow Rich, The 5 AM Club, Deep Work, Can\'t Hurt Me, or Extreme Ownership. Maximum 15 words. Return ONLY in this exact format with no extra text:\nQUOTE: [the quote here]\nSOURCE: [book name or author name only]',
                 }
               ]
             }
@@ -28,9 +29,8 @@ class QuoteService {
         },
       );
 
-      final text =
-      response.data['candidates'][0]['content']['parts'][0]['text']
-      as String;
+      final text = response.data['candidates'][0]['content']['parts'][0]['text']
+          as String;
 
       final lines = text.trim().split('\n');
       String quote = '';
@@ -67,8 +67,7 @@ class QuoteService {
         'source': 'Can\'t Hurt Me'
       },
       {
-        'quote':
-        'Every action is a vote for the person you want to become.',
+        'quote': 'Every action is a vote for the person you want to become.',
         'source': 'Atomic Habits'
       },
       {

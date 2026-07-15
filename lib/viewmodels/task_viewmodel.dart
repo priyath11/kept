@@ -33,8 +33,10 @@ final taskCountsProvider = Provider<Map<String, int>>((ref) {
         'didnt_finish': tasks.where((t) => t.status == 'didnt_finish').length,
       };
     },
-    loading: () => {'total': 0, 'completed': 0, 'pending': 0, 'didnt_finish': 0},
-    error: (_, __) => {'total': 0, 'completed': 0, 'pending': 0, 'didnt_finish': 0},
+    loading: () =>
+        {'total': 0, 'completed': 0, 'pending': 0, 'didnt_finish': 0},
+    error: (_, __) =>
+        {'total': 0, 'completed': 0, 'pending': 0, 'didnt_finish': 0},
   );
 });
 

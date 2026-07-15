@@ -93,8 +93,8 @@ class TaskTile extends StatelessWidget {
           color: isCompleted
               ? AppTheme.black.withOpacity(0.2)
               : isDidntFinish
-              ? AppTheme.lightGray.withOpacity(0.4)
-              : AppTheme.lightGray.withOpacity(0.3),
+                  ? AppTheme.lightGray.withOpacity(0.4)
+                  : AppTheme.lightGray.withOpacity(0.3),
           width: 1,
         ),
       ),
@@ -109,14 +109,14 @@ class TaskTile extends StatelessWidget {
               color: isCompleted
                   ? AppTheme.black
                   : isDidntFinish
-                  ? AppTheme.lightGray
-                  : Colors.transparent,
+                      ? AppTheme.lightGray
+                      : Colors.transparent,
               border: Border.all(
                 color: isCompleted
                     ? AppTheme.black
                     : isDidntFinish
-                    ? AppTheme.lightGray
-                    : AppTheme.mediumGray,
+                        ? AppTheme.lightGray
+                        : AppTheme.mediumGray,
                 width: 1.5,
               ),
             ),
@@ -131,9 +131,7 @@ class TaskTile extends StatelessWidget {
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w500,
-                color: isDidntFinish
-                    ? AppTheme.lightGray
-                    : AppTheme.black,
+                color: isDidntFinish ? AppTheme.lightGray : AppTheme.black,
                 decoration: isDidntFinish
                     ? TextDecoration.lineThrough
                     : TextDecoration.none,

@@ -62,7 +62,8 @@ class AppTheme {
           borderSide: const BorderSide(color: black, width: 1.5),
         ),
         hintStyle: const TextStyle(color: lightGray, fontSize: 14),
-        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        contentPadding:
+            const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       ),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         backgroundColor: background,
@@ -70,7 +71,8 @@ class AppTheme {
         unselectedItemColor: lightGray,
         elevation: 0,
         type: BottomNavigationBarType.fixed,
-        selectedLabelStyle: TextStyle(fontSize: 11, fontWeight: FontWeight.w600),
+        selectedLabelStyle:
+            TextStyle(fontSize: 11, fontWeight: FontWeight.w600),
         unselectedLabelStyle: TextStyle(fontSize: 11),
       ),
       useMaterial3: true,

@@ -39,7 +39,6 @@ class QuoteViewModel extends Notifier<QuoteState> {
   }
 }
 
-final quoteViewModelProvider =
-NotifierProvider<QuoteViewModel, QuoteState>(
+final quoteViewModelProvider = NotifierProvider<QuoteViewModel, QuoteState>(
   QuoteViewModel.new,
 );

@@ -23,7 +23,9 @@ class _TasksScreenState extends ConsumerState<TasksScreen> {
 
   void _addTask() async {
     if (_taskController.text.trim().isEmpty) return;
-    await ref.read(taskViewModelProvider.notifier).addTask(_taskController.text);
+    await ref
+        .read(taskViewModelProvider.notifier)
+        .addTask(_taskController.text);
     _taskController.clear();
     setState(() => _showAddField = false);
   }

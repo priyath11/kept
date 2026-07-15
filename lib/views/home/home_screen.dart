@@ -10,8 +10,13 @@ class HomeScreen extends ConsumerWidget {
 
   String _getDayName() {
     final days = [
-      'Monday', 'Tuesday', 'Wednesday',
-      'Thursday', 'Friday', 'Saturday', 'Sunday'
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday',
+      'Sunday'
     ];
     return days[DateTime.now().weekday - 1];
   }
@@ -19,8 +24,18 @@ class HomeScreen extends ConsumerWidget {
   String _getDate() {
     final now = DateTime.now();
     final months = [
-      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec'
     ];
     return '${months[now.month - 1]} ${now.day}';
   }
@@ -176,9 +191,7 @@ class _StatChip extends StatelessWidget {
         color: filled ? AppTheme.black : AppTheme.cardBackground,
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
-          color: filled
-              ? AppTheme.black
-              : AppTheme.lightGray.withOpacity(0.4),
+          color: filled ? AppTheme.black : AppTheme.lightGray.withOpacity(0.4),
           width: 1,
         ),
       ),
